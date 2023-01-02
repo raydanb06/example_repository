@@ -1,16 +1,27 @@
+// Appending 0's to the end or beginning of a number
 let billion = 1e9;
-alert(7.3e9);
+console.log(7.3e9);
 
 if (billion === 1e9) {
-  alert(`1e9 is equal to ${billion}`);
+  console.log(`1e9 is equal to ${billion}`);
 } else {
-  alert(`1e9 does not equal ${billion}`);
+  console.log(`1e9 does not equal ${billion}`);
 }
 
 let mcs = 0.000001;
 
 if (mcs === 1e-6) {
-  alert(`1e-6 is equal to ${mcs}`);
+  console.log(`1e-6 is equal to ${mcs}`);
 } else {
-  alert(`1e-6 does not equal ${mcs}`)
+  console.log(`1e-6 does not equal ${mcs}`)
 }
+
+// Hex
+console.log(`Hex number: ${0xff}`);
+console.log(`Hex number (capital): ${0xFF}`); // Case doesn't matter
+
+// Binary
+console.log(`Binary number: ${0b11111111}`);
+
+// Octal
+console.log(`Octal number: ${0o377}`);
