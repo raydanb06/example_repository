@@ -68,3 +68,38 @@ console.log(`(1.23456).toFixed(1): ${(1.23456).toFixed(1)}`);
 console.log(`(1.23456).toFixed(2): ${(1.23456).toFixed(2)}`);
 // .toFixed(n) rounds like Math.round
 console.log(`(1.23456).toFixed(4): ${(1.23456).toFixed(4)}`);
+
+// Imprecise Calculations
+console.log(1e500); //infinity
+let sum = 0.1 + 0.2;
+console.log(sum);
+console.log(+sum.toFixed(2));
+
+/* parseInt and parseFloat
+Extracts a numeric value.
+Reads a number from a string until they can't.
+parseInt returns an integer and parseFloat returns a floating-point number. */
+console.log(parseInt('100px'));
+console.log(parseFloat('12.5em'));
+console.log(parseInt('12.3'));
+console.log(parseFloat('12.3.4'));
+console.log(parseInt('a123'));
+// parseInt second parameter specifies the base of the numeral system
+console.log(parseInt('0xff', 16));
+console.log(parseInt('ff', 16));
+console.log(parseInt('2n9c', 36));
+
+/* Other math functions
+Math.random returns a number from 0 - 1, not including 1 */
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
+
+/* Math.max(a, b, c, ...) and Math.min(a, b, c, ....)
+Returns the greatest and smallest from the arbitrary number of arguments*/
+console.log(Math.max(3, 5, -10, 0, 1));
+console.log(Math.min(1, 2));
+
+/* Math.pow(n, power)
+Returns n raised to the given power. */
+console.log(Math.pow(2, 10));
