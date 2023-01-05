@@ -105,7 +105,16 @@ Returns n raised to the given power. */
 console.log(Math.pow(2, 10));
 
 // Task 1: Sum numbers from the visitor
-alert('Choose 2 numbers to add.');
-let num1 = +prompt('Choose the first number to add', 'Integer');
-let num2 = +prompt('Choose the second number to add', 'Integer')
-console.log(num1 + num2);
+// alert('Choose 2 numbers to add.');
+// let num1 = +prompt('Choose the first number to add', 'Integer');
+// let num2 = +prompt('Choose the second number to add', 'Integer')
+// console.log(num1 + num2);
+
+// Task 2: A random integer from min to max
+// function randomInteger(min, max) {
+//   // here rand is from min to (max+1)
+//   let rand = min + Math.random() * (max + 1 - min);
+//   return Math.floor(rand);
+// }
+
+// alert( randomInteger(1, 3) );
