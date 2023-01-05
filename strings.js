@@ -72,3 +72,43 @@ console.log(str4);
 console.log('Interface'.toUpperCase());
 console.log('Interface'.toLowerCase());
 console.log('Interface'[0].toLowerCase()); // only a single character
+
+// Searching for a substring
+/* str.indexOf(substr, pos) - looks for substr in str from starting position
+pos, and returns the position where the match was found or -1 if 
+nothing can be found */
+let str5 = 'Widget with id';
+console.log(str5.indexOf('Widget'));
+console.log(str5.indexOf('widget'));
+console.log(str5.indexOf('id'));
+console.log(str5.indexOf('id', 2));
+
+let str6 = 'As sly as a fox, as strong as an ox.';
+let target = 'as';
+let pos = 0;
+while (true) {
+  let foundPos = str6.indexOf(target, pos);
+  if (foundPos === -1) break;
+
+  console.log(`Found at ${foundPos}`);
+  pos = foundPos+1;
+}
+
+let pos2 = -1;
+while ((pos2 = str6.indexOf(target, pos2 + 1)) !== -1) {
+  console.log(pos2);
+}
+
+/* str.lastIndexOf(substr, position) - searches from the end of a 
+string to the beginning, It would list the occurrences in the reverse order */
+
+let str7 = "Widget with id";
+
+if (str7.indexOf("Widget")) {
+    console.log("We found it");
+    // doesn't work! indexOf returns 0 and doesn't enter the loop
+}
+
+if (str7.indexOf("Widget") !== -1) {
+  console.log("We found it"); // works now!
+}
