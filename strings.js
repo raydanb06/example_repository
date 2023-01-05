@@ -62,7 +62,13 @@ for (let char of 'Hello') {
 let str3 = 'Hi';
 str3[0] = 'h'; // error
 console.log(str3[0]); // still shows H
+
 // usual workaround is to create a whole new string and assign it to str
 let str4 = 'Hi'
 str4 = 'h' + str4[1];
 console.log(str4);
+
+// Changing the case - Methods toLowerCase() and toUpperCase() change case:
+console.log('Interface'.toUpperCase());
+console.log('Interface'.toLowerCase());
+console.log('Interface'[0].toLowerCase()); // only a single character
