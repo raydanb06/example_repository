@@ -103,3 +103,9 @@ console.log(Math.min(1, 2));
 /* Math.pow(n, power)
 Returns n raised to the given power. */
 console.log(Math.pow(2, 10));
+
+// Task 1: Sum numbers from the visitor
+alert('Choose 2 numbers to add.');
+let num1 = +prompt('Choose the first number to add', 'Integer');
+let num2 = +prompt('Choose the second number to add', 'Integer')
+console.log(num1 + num2);
