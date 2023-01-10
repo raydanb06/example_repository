@@ -170,3 +170,11 @@ for (let i = 65; i <= 220; i++) {
   str9 += String.fromCodePoint(i);
 }
 console.log(str9);
+
+// Correct comparisons
+/* str.localeCompare(str2) returns an integer indicating whether str is less, 
+equal or greater than str2 according to the language rules:
+returns a negative number if str is less than str 2
+returns a positive number if str is greater than str 2
+returns 0 if they are equivalent */
+console.log('Österreich'.localeCompare('Zealand'));
