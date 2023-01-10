@@ -112,3 +112,15 @@ if (str7.indexOf("Widget")) {
 if (str7.indexOf("Widget") !== -1) {
   console.log("We found it"); // works now!
 }
+
+// includes, startsWith, endWith
+/* str.inlcudes(substr, pos) returns true/false depending on whether str
+contains substr within, use to test for match but don't need position */
+console.log("Widget with id".includes("Widget"));
+console.log("Hello".includes("Bye"));
+console.log("Widget".includes("id"));
+console.log("Widget".includes("id", 3));
+
+/* str.startsWith and str.endsWith do exactly what they say */
+console.log("Widget".startsWith("Wid"));
+console.log("Widget".endsWith("get"));
