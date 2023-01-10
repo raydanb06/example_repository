@@ -113,7 +113,7 @@ if (str7.indexOf("Widget") !== -1) {
   console.log("We found it"); // works now!
 }
 
-// includes, startsWith, endWith
+// includes, startsWith, endsWith
 /* str.inlcudes(substr, pos) returns true/false depending on whether str
 contains substr within, use to test for match but don't need position */
 console.log("Widget with id".includes("Widget"));
@@ -124,3 +124,26 @@ console.log("Widget".includes("id", 3));
 /* str.startsWith and str.endsWith do exactly what they say */
 console.log("Widget".startsWith("Wid"));
 console.log("Widget".endsWith("get"));
+
+// Getting a substring - substring, substr, slice
+/* str.slice(start, end) returns the part of the string from start 
+but not including end*/
+let str8 = 'stringify';
+console.log(str8.slice(0, 5));
+console.log(str8.slice(0, 1));
+console.log(str8.slice(2)); // no second argument, goes to end of str8ing
+console.log(str8.slice(-4, -1)); // no second argument, goes to end of string
+
+/* str.substring(start, end) returns the part of the string between
+start and end but not including end, allows start to be greater than end,
+negatiave arguments are not supported (unlike slice), they are treated as 0 */
+console.log(str8.substring(2, 6));
+console.log(str8.substring(6, 2));
+console.log(str8.slice(2, 6)); // same as substring
+console.log(str8.slice(6, 2)); // '' an empty string
+
+/* str.substr(start, length) returns the part of the string from start, with 
+the given length, this allows us to specify the length instead of
+the ending position*/
+console.log(str8.substr(2, 4));
+console.log(str8.substr(-4, 2));
