@@ -178,3 +178,13 @@ returns a negative number if str is less than str 2
 returns a positive number if str is greater than str 2
 returns 0 if they are equivalent */
 console.log('Österreich'.localeCompare('Zealand'));
+
+// Task 1 - Uppercase the first character
+function ucFirst(str) {
+  if (!str) {
+    return str;
+  }
+  return str[0].toUpperCase() + str.slice(1);
+}
+let newStr = ucFirst('john')
+console.log(newStr);
