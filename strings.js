@@ -147,3 +147,26 @@ the given length, this allows us to specify the length instead of
 the ending position*/
 console.log(str8.substr(2, 4));
 console.log(str8.substr(-4, 2));
+
+// Comparing Strings
+// a lowercase letter is always greater than the uppercase
+console.log('a' > 'Z');
+
+// letters with diacritical marks are 'out of order'
+console.log('Österreich' > 'Zealand');
+
+/* str.codePointAt(pos) returns a decimal number representing the code
+for the character at position pos */
+console.log('Z'.codePointAt(0));
+console.log('Z'.codePointAt(0));
+console.log('z'.codePointAt(0).toString(16));
+
+/* String.fromCodePoint(code) creates a character by its numeric code */
+console.log(String.fromCodePoint(90));
+console.log(String.fromCodePoint(0x5a));
+
+let str9 = '';
+for (let i = 65; i <= 220; i++) {
+  str9 += String.fromCodePoint(i);
+}
+console.log(str9);
