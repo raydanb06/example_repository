@@ -59,3 +59,18 @@ fruits.push('pineapple', 'guava');
 console.log(fruits);
 fruits.unshift('mango', 'berry');
 console.log(fruits);
+
+ // internals
+ /*
+ - square brackets used to access a property arr[0] comes from object syntax
+ - essentially the same as obj[key], where arr is the obj, while #'s are keys
+ - array provides special methods to work with ordered collections of data
+ */
+
+ // copied by reference
+ let newFruits = ['banana'];
+ let arr2 = newFruits;
+
+ console.log( arr2 === newFruits);
+ arr2.push('pear');
+ console.log(newFruits);
