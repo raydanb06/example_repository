@@ -74,3 +74,11 @@ console.log(fruits);
  console.log( arr2 === newFruits);
  arr2.push('pear');
  console.log(newFruits);
+
+ // performance
+ /*
+- push/pop run fast, shift/unshift run slow
+- shift/unshift needs to move all elements to the left, meaning re-numbering
+them from the index 1 to 0, and from 2 to 1, and so on: more in-memory operations
+- push/pop does not need to move anything, they work at the end of the array
+ */
